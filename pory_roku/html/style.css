@@ -1,0 +1,50 @@
+html, body{
+	background-color: white;
+}
+
+
+td, th {
+	border: 1px solid black;
+	text-align: middle;
+
+}
+
+#k13 {
+	width: 100px;
+}
+
+#k154 {
+	width: 400px;
+}
+
+#k35 {
+	width: 300px;
+}
+
+#k24 {
+	width: 400px;
+}
+
+#k11 {
+	width: 100px;
+}
+
+#k27 {
+	width: 700px;
+}
+
+#k22 {
+	width: 200px;
+}
+
+#k210 {
+	width: 200px;
+}
+
+
+#t01 {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  border: 5px solid black;
+}
