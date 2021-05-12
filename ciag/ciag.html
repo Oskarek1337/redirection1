@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function ciag(){
+			var a1 = parseInt(document.getElementById("a1").value);
+			var n = parseInt(document.getElementById("n").value);
+			var r = parseInt(document.getElementById("r").value);
+
+			var cionk = zrobCiag(a1, n, r)
+			document.getElementById("wynik").innerHTML=cionk;
+			document.getElementById("siusior").innerHTML=wypiszCiag(cionk);
+		}
+
+		function wypiszCiag(ciak){
+			console.log(ciak);
+			var ck = "";
+			for (i=0; i<ciak.length+1; i++){
+				ck = ck + String(ciak.slice(0, i)) + "<br/>";
+			}
+			return ck
+		}
+		function zrobCiag(a1, n, r){
+			ciags = [];
+			for(i = 0; i<n; i++){
+				ciags.push(a1 + i*r);
+			}
+			return ciags
+
+		}
+	
+	</script>
+</head>
+
+<body>
+
+	<p>a1</p>
+	<input type="number" id="a1" value="a1" onfocus="this.value=''"/>
+	<p>r</p>
+	<input type="number" id="r" value="r" onfocus="this.value=''"/>
+	<p>n</p>
+	<input type="number" id="n" value="n" onfocus="this.value=''"/>
+	<p></p>
+	<input type="submit" value="Sprawdź" onclick="ciag()"/>
+	
+	<div id="wynik"></div>
+	<div id="siusior"></div>
+
+</body>
+
+</html>
